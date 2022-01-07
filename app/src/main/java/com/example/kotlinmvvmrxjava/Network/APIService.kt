@@ -3,7 +3,6 @@ package com.example.kotlinmvvmrxjava.Network
 import com.example.kotlinmvvmrxjava.Model.PostModel
 import io.reactivex.Observable
 import retrofit2.http.GET
-import java.util.*
 
 interface APIService {
     @GET("posts")
