@@ -10,7 +10,9 @@ import com.example.kotlinmvvmrxjava.Model.PostModel
 import com.example.kotlinmvvmrxjava.R
 import java.lang.StringBuilder
 
-class PostListAdapter(var context: Context, var postModelList: MutableList<PostModel>) : RecyclerView.Adapter<PostListAdapter.MyViewHolder> {
+class PostListAdapter(var context: Context, var postModelList: MutableList<PostModel>) :
+    RecyclerView.Adapter<PostListAdapter.MyViewHolder>()
+{
 
     inner class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         var txtUserId: TextView
